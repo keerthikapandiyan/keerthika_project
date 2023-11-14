@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,intial-sale=1">
+    <style>
+        .image{
+            display: block;
+            margin-left: left;
+            margin-right: auto;
+        }
+    </style>
+    </head>
+</html>
+<body background="https://static.vecteezy.com/system/resources/previews/006/469/230/non_2x/abstract-white-and-gray-light-gradient-lines-background-free-vector.jpg"
+style="background-repeat: no-repeat;background-attachment: fixed;background-size: 100% 100%;">
+    <h1 style="text-align: center; color: rgb(0, 0, 0);font-size: 70px;"><u>contour plot</u></h1>
+    <h2 style="text-align: corner; color:rgb(42, 165, 42);font-size:60px;"><u>DEFINITION:</u></h2>
+    <p style="color: rgb(0, 0, 0);font-size:40px;"> A contour plot is a graphical technique for representing a 3-dimensional 
+        surface by plotting constant z slices, called contours, on a 2-dimensional format.
+      That is, given a value for z, lines are drawn for connecting the (x,y) coordinates
+         where that z value occurs.,</p>
+    <h3 style="text-align: corner; color:rgb(42, 165, 42);font-size:60px;;"><u>USES:</u></h3>
+    <p style="color: rgb(0, 0, 0);font-size:40px;"
+     <br>Use contour plots to display the relationship between two independent variables and a dependent variable.<br> 
+     <br>The graph shows values of the Z variable for combinations of the X and Y variables.<br>
+     <br>The X and Y values are displayed along the X and Y-axes,<br>
+     <br>while contour lines and bands represent the Z value.</p>
+     <h4 style="text-align: corner; color:rgb(42, 165, 42);font-size:60px;;"><u>ADVANTAGES:</u></h4>
+     <p style="color: rgb(0, 0, 0);font-size:40px;">Advantages of using contour maps include the ability to easily visualize changes in 
+        elevation and the ability to estimate the steepness of slopes.<br>
+         <br>They can also be useful for determining the location of drainage patterns and identifying potential sources of water
+         .<br><br>The Contours provide important information which can help us to study the nature of the terrain.
+          <br><br>This proves to be useful for the selection of sites<br>
+         <br> to determine the catchment area of a drainage basin, or to find intervisibility between two or more stations, etc</p>
+    <h5 style="text-align: corner; color:rgb(42, 165, 42);font-size:60px;"><u>APPLICATIONS:</u></h5>
+    <p style="color: rgb(0, 0, 0);font-size:40px;">Use contour plots to display the relationship between two independent variables and a dependent variable.<br>
+         <br> The graph shows values of the Z variable for combinations of the X and Y variables. <br>
+         <br>The X and Y values are displayed along the X and Y-axes, while contour lines and bands represent the Z value.</p>
+
+    <h6 style="text-align: corner; color:rgb(42, 165, 42);font-size:60px;"><u>SAMPLE PROGRAM:</u></h6>
+    <p style="color: rgb(0, 0, 0);font-size:40px;">
+        import matplotlib.pyplot as plt<br>
+import numpy as np<br> 
+  
+<br>feature_x = np.arange(0, 50, 2)<br>
+feature_y = np.arange(0, 50, 3)<br>
+  
+<br># Creating 2-D grid of features<br>
+[X, Y] = np.meshgrid(feature_x, feature_y)<br> 
+  
+<br>ax = plt.subplots(1, 1)<br>
+  
+Z = np.cos(X / 2) + np.sin(Y / 4)<br>
+  
+<br># plots contour lines<br>
+ax.contour(X, Y, Z)<br>
+  
+<br>ax.set_title('Contour Plot')<br> 
+ax.set_xlabel('feature_x')<br>
+ax.set_ylabel('feature_y')<br>
+  
+<br>plt.show() </p>
+<h7 style="text-align: corner; color:rgb(42, 165, 42);font-size:60px;"><u>OUTPUT:</u></h7>
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/20200413022057/example110.png"
+class="image" width="200" height="150">
+
+</body>
